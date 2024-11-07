@@ -1,0 +1,191 @@
+{"NYSE FANG+® Index": {"index_name": "NYSE FANG+® Index",
+  "alternative_name": "NYSE U.S. Big Tech 10 Index",
+  "index_type": "rules-based, equal-weighted equity benchmark",
+  "index_objective": "to track the performance of 10 highly-traded growth stocks of technology and tech-enabled companies in the technology, media & communications and consumer discretionary sectors",
+  "constituent_selection": {"criteria": [
+                {"description": "Full company market capitalization (including all listed and unlisted share classes) of $5 billion or greater",
+     "reference_date": "Reference Date"
+                },
+                {"description": "Actively trading for at least 60 calendar days when analyzing the specific share class included in the Index",
+     "reference_date": "Reference Date"
+                },
+                {"description": "Average Daily Traded Value (ADTV) of $50 million or greater when analyzing the specific share class included in the Index over the preceding 6-month period, or over the applicable trading period of the security if its available trading history is less than 6 months",
+     "reference_date": "Reference Date"
+                },
+                {"description": "United States (U.S.) country of incorporation and U.S. country of risk",
+     "reference_date": "Reference Date"
+                },
+                {"description": "Classified within one of the following sub-industries belonging to the Consumer Discretionary, Media & Communications or Technology sectors based on the ICE Uniform Sector Classification schema",
+     "reference_date": "Reference Date"
+                }
+            ],
+   "sub_industries": ["Car & Light Truck Manufacturers",
+    "Consumer Electronics",
+    "Leisure Goods",
+    "Online & Direct Retail",
+    "Specialized Consumer Services",
+    "Audio Content",
+    "Social Media, Search & Online Marketing",
+    "Video Content",
+    "Video Games",
+    "Application Software",
+    "Battery Technology",
+    "Communications Equipment",
+    "Enterprise Software",
+    "Internet Services & Infrastructure",
+    "Network Security",
+    "Platform as a Service",
+    "Semiconductors",
+    "Software as a Service",
+    "Solar Cells"
+            ],
+   "listing_requirements": [
+                {"exchange": "New York Stock Exchange",
+     "country": "United States of America"
+                },
+                {"exchange": "NASDAQ", "country": "United States of America"
+                },
+                {"exchange": "NYSE American", "country": "United States of America"
+                },
+                {"exchange": "NYSE Arca", "country": "United States of America"
+                },
+                {"exchange": "Cboe BZX", "country": "United States of America"
+                }
+            ],
+   "ranking_factors": [
+                {"factor_name": "Full company market capitalization",
+     "weight": "35%",
+     "description": "Includes all listed and unlisted share classes",
+     "reference_date": "Reference Date"
+                },
+                {"factor_name": "ADTV on the specific share class",
+     "weight": "35%",
+     "description": "Over the preceding 6 months or available trading period for securities with less than 6 months of trading history",
+     "reference_date": "Reference Date"
+                },
+                {"factor_name": "Price-to-sales ratio (LTM)",
+     "weight": "15%",
+     "description": "Calculated by dividing the 1) price as of the Reference Date by the 2) net sales from the latest 12-month period",
+     "reference_date": "Reference Date"
+                },
+                {"factor_name": "1-year net sales growth (LTM)",
+     "weight": "15%",
+     "description": "Calculated by dividing the 1) change between the net sales from the latest 12-month period and the 12-month period preceding it by the 2) absolute value of that prior 12-month period net sales",
+     "reference_date": "Reference Date"
+                }
+            ]
+        },
+  "reconstitution": {"frequency": "quarterly",
+   "effective_date": "after the close of the third Friday in March, June, September and December",
+   "reference_date": "the last Index Business Day of the month preceding the reconstitution month",
+   "announcement_date": "the second Friday of the reconstitution month",
+   "share_reference_date": "the second Index Business Day preceding the third Friday of the reconstitution month",
+   "constituent_weight": "10%",
+   "constituent_share_calculation": "using information from the Share Reference Date",
+   "divisor_adjustment": "to ensure continuity of the Index’s value",
+   "corporate_action_adjustment": "between the Share Reference Date and Effective Date to account for any corporate actions that may occur in that period",
+   "replacement_process": {"description": "the next highest ranked security from the last reconstitution is added to the Index at the weight of the constituent being deleted",
+    "trigger": "If a corporate action leads to the removal of a constituent between the quarterly reconstitutions"
+            },
+   "corporate_action_treatment": [
+                {"action_type": "merger or acquisition between two different Index constituents",
+     "treatment": "the acquired constituent is deleted and the replacement process outlined above is followed. The shares for the acquiring company are not adjusted to account for any share considerations that are a part of the merger terms"
+                },
+                {"action_type": "Index constituents that have been acquired and ceased trading due to a suspension or halt",
+     "treatment": "valued in the Index at the merger deal terms. This may consist of a cash amount, acquirer share amount, or a combination of cash and shares. The constituent is deleted from the Index based on the same merger deal terms valuation"
+                },
+                {"action_type": "spin-off",
+     "treatment": "The Index implements a zero-price spin-off treatment. After the close of the first day of trading for the spinco, it is deleted from the Index and its value is reinvested back into the parent constituent via a share increase"
+                }
+            ]
+        },
+  "FAANMG": {"description": "refers to the following 6 securities: Meta Platforms Inc. (META), Apple Inc. (AAPL), Amazon.com Inc. (AMZN), Netflix Inc. (NFLX), Microsoft Corp. (MSFT), and Alphabet Inc. Class A (GOOGL)",
+   "role": "representative of the “FANG” theme with exposure to the revenue segments outlined in requirement (v) above",
+   "qualification": "If any of these 6 FAANMG securities do not qualify for inclusion, based on the Index security type, exchange listing, sector classification, market capitalization, liquidity, seasoning, country of incorporation and country of risk criteria, then the next highest ranked securities from the steps above are selected to maintain an Index constituent count of 10 securities"
+        },
+  "buffer_rule": {"description": "Any of the top 10 non-FAANMG securities based on this combined rank that are already a part of the Index as of the Reference Date are maintained in the Index through the reconstitution. Following that, the next highest ranked non-FAANMG securities are selected for inclusion until 4 total securities are selected.",
+   "initial_implementation": "For the initial reconstitution incorporating this buffer rule in December 2022, the top 4 securities based on this combined rank were selected for inclusion, with no buffer criteria applied."
+        },
+  "data_source": {"name": "FactSet Fundamentals database",
+   "use": "All fundamental data is sourced from the FactSet Fundamentals database"
+        },
+  "index_summary": {"full_name": "NYSE FANG+ Index , a/k/a NYSE U.S. Big Tech 10 Index",
+   "tickers": {"Price Return": "NYFANG",
+    "Gross Total Return": "NYFANGT",
+    "Net Total Return": "NYFANGNT",
+    "Opening Settlement Value": "NYFANGST",
+    "Daily Opening Settlement Value": "FANGST",
+    "Price Return (JPY)": "NYFANGJ",
+    "Gross Total Return (JPY)": "NYFANGJT",
+    "Price Return (INR)": "NYFANGI",
+    "Gross Total Return (INR)": "NYFANGIT",
+    "Net Total Return (INR)": "NYFANGIN",
+    "Price Return (AUD)": "NYFANGA",
+    "Gross Total Return (AUD)": "NYFANGAT",
+    "Net Total Return (AUD)": "NYFANGAN",
+    "Price Return (AUD Hedged)": "NYFNGHA",
+    "Gross Total Return (AUD Hedged)": "NYFNGHAT",
+    "Net Total Return (AUD Hedged)": "NYFNGHAN",
+    "Daily 1.5x Price Return": "FANG15X",
+    "Daily 1.5x Gross Total Return": "FANGT15X",
+    "Daily 2x Price Return": "FANG2X",
+    "Daily 2x Price Return (IR Adjusted)": "FANG2XI",
+    "Daily 2x Gross Total Return": "FANGT2X",
+    "Daily 2x Gross Total Return (IR Adjusted)": "FANGT2XI",
+    "Daily 3x Price Return": "FANG3X",
+    "Daily 3x Gross Total Return": "FANGT3X",
+    "Daily -1x Price Return": "DFANG1X",
+    "Daily -1x Gross Total Return": "DFANGT1X",
+    "Daily -1.5x Price Return": "DFNG15X",
+    "Daily -1.5x Gross Total Return": "DFNGT15X",
+    "Daily -2x Price Return": "DFANG2X",
+    "Daily -2x Gross Total Return": "DFANGT2X",
+    "Daily -3x Price Return": "DFANG3X",
+    "Daily -3x Gross Total Return": "DFANGT3X"
+            },
+   "calculation_frequency": {"Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Net Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Opening Settlement Value": "Once a month on the 3rd Friday between 9: 30 AM & 6: 00 PM ET",
+    "Daily Opening Settlement Value": "Once daily between 9: 30 AM & 6: 00 PM ET",
+    "Price Return (JPY)": "Once daily after 10: 00 JST",
+    "Gross Total Return (JPY)": "Once daily after 10: 00 JST",
+    "Price Return (INR)": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Gross Total Return (INR)": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Net Total Return (INR)": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Price Return (AUD)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Gross Total Return (AUD)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Net Total Return (AUD)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Price Return (AUD Hedged)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Gross Total Return (AUD Hedged)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Net Total Return (AUD Hedged)": "Every 1 sec between 9: 30 AM & 7: 15 PM ET",
+    "Daily 1.5x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 1.5x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 2x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 2x Price Return (IR Adjusted)": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 2x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 2x Gross Total Return (IR Adjusted)": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 3x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily 3x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -1x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -1x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -1.5x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -1.5x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -2x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -2x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -3x Price Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET",
+    "Daily -3x Gross Total Return": "Every 1 sec between 9: 30 AM & 6: 00 PM ET"
+            },
+   "number_of_constituents": "10",
+   "base_date": "September 19,
+            2014",
+   "base_level": "1000.00",
+   "inception_date": "September 19,
+            2014",
+   "launch_date": "September 26,
+            2017",
+   "website": "indices.ice.com",
+   "ESG_disclosure": "The NYSE FANG+ Index does not take ESG factors into account"
+        }
+    }
+}
