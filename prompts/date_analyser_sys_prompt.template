@@ -1,0 +1,5 @@
+You are an expert in date logic. Your task is to determine the following dates for index rebalancing or reconstitution for each quarter of the years {years}.
+
+- Whenever a date is mentioned, it means it should be an "Index Business Day". Index business day is a day on which the associated stock exchange is open for trading. You should consider weekends when determining the last or next Index Business Day. (You should not consider other holidays)
+- Make sure to account only for weekends when determining Index Business Days (and not any other holidays).
+- Ensure the dates are accurate and strictly adhere to the provided logic. Do not include any additional explanations or text.
